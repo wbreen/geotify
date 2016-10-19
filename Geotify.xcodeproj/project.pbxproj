@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AB1A71F1DB7EE0F00839B1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1A71E1DB7EE0F00839B1D /* AppDelegate.swift */; };
+		2AB1A7211DB7EE0F00839B1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1A7201DB7EE0F00839B1D /* ViewController.swift */; };
+		2AB1A7241DB7EE0F00839B1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AB1A7221DB7EE0F00839B1D /* Main.storyboard */; };
+		2AB1A7261DB7EE0F00839B1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB1A7251DB7EE0F00839B1D /* Assets.xcassets */; };
+		2AB1A7291DB7EE0F00839B1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AB1A7271DB7EE0F00839B1D /* LaunchScreen.storyboard */; };
+		2AB1A7341DB7EE0F00839B1D /* GeotifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1A7331DB7EE0F00839B1D /* GeotifyTests.swift */; };
+		2AB1A73F1DB7EE0F00839B1D /* GeotifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1A73E1DB7EE0F00839B1D /* GeotifyUITests.swift */; };
+		2AB1A74D1DB7F65400839B1D /* AddGeotificationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1A74C1DB7F65400839B1D /* AddGeotificationTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AB1A7301DB7EE0F00839B1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AB1A7131DB7EE0E00839B1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AB1A71A1DB7EE0E00839B1D;
+			remoteInfo = Geotify;
+		};
+		2AB1A73B1DB7EE0F00839B1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AB1A7131DB7EE0E00839B1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AB1A71A1DB7EE0E00839B1D;
+			remoteInfo = Geotify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2AB1A71B1DB7EE0F00839B1D /* Geotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AB1A71E1DB7EE0F00839B1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2AB1A7201DB7EE0F00839B1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2AB1A7231DB7EE0F00839B1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2AB1A7251DB7EE0F00839B1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AB1A7281DB7EE0F00839B1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2AB1A72A1DB7EE0F00839B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AB1A72F1DB7EE0F00839B1D /* GeotifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeotifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AB1A7331DB7EE0F00839B1D /* GeotifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeotifyTests.swift; sourceTree = "<group>"; };
+		2AB1A7351DB7EE0F00839B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AB1A73A1DB7EE0F00839B1D /* GeotifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeotifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AB1A73E1DB7EE0F00839B1D /* GeotifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeotifyUITests.swift; sourceTree = "<group>"; };
+		2AB1A7401DB7EE0F00839B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AB1A74C1DB7F65400839B1D /* AddGeotificationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGeotificationTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AB1A7181DB7EE0E00839B1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AB1A72C1DB7EE0F00839B1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AB1A7371DB7EE0F00839B1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AB1A7121DB7EE0E00839B1D = {
+			isa = PBXGroup;
+			children = (
+				2AB1A71D1DB7EE0F00839B1D /* Geotify */,
+				2AB1A7321DB7EE0F00839B1D /* GeotifyTests */,
+				2AB1A73D1DB7EE0F00839B1D /* GeotifyUITests */,
+				2AB1A71C1DB7EE0F00839B1D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2AB1A71C1DB7EE0F00839B1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AB1A71B1DB7EE0F00839B1D /* Geotify.app */,
+				2AB1A72F1DB7EE0F00839B1D /* GeotifyTests.xctest */,
+				2AB1A73A1DB7EE0F00839B1D /* GeotifyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AB1A71D1DB7EE0F00839B1D /* Geotify */ = {
+			isa = PBXGroup;
+			children = (
+				2AB1A71E1DB7EE0F00839B1D /* AppDelegate.swift */,
+				2AB1A7201DB7EE0F00839B1D /* ViewController.swift */,
+				2AB1A7221DB7EE0F00839B1D /* Main.storyboard */,
+				2AB1A7251DB7EE0F00839B1D /* Assets.xcassets */,
+				2AB1A7271DB7EE0F00839B1D /* LaunchScreen.storyboard */,
+				2AB1A72A1DB7EE0F00839B1D /* Info.plist */,
+				2AB1A74C1DB7F65400839B1D /* AddGeotificationTableViewController.swift */,
+			);
+			path = Geotify;
+			sourceTree = "<group>";
+		};
+		2AB1A7321DB7EE0F00839B1D /* GeotifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AB1A7331DB7EE0F00839B1D /* GeotifyTests.swift */,
+				2AB1A7351DB7EE0F00839B1D /* Info.plist */,
+			);
+			path = GeotifyTests;
+			sourceTree = "<group>";
+		};
+		2AB1A73D1DB7EE0F00839B1D /* GeotifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2AB1A73E1DB7EE0F00839B1D /* GeotifyUITests.swift */,
+				2AB1A7401DB7EE0F00839B1D /* Info.plist */,
+			);
+			path = GeotifyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AB1A71A1DB7EE0E00839B1D /* Geotify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AB1A7431DB7EE0F00839B1D /* Build configuration list for PBXNativeTarget "Geotify" */;
+			buildPhases = (
+				2AB1A7171DB7EE0E00839B1D /* Sources */,
+				2AB1A7181DB7EE0E00839B1D /* Frameworks */,
+				2AB1A7191DB7EE0E00839B1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Geotify;
+			productName = Geotify;
+			productReference = 2AB1A71B1DB7EE0F00839B1D /* Geotify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2AB1A72E1DB7EE0F00839B1D /* GeotifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AB1A7461DB7EE0F00839B1D /* Build configuration list for PBXNativeTarget "GeotifyTests" */;
+			buildPhases = (
+				2AB1A72B1DB7EE0F00839B1D /* Sources */,
+				2AB1A72C1DB7EE0F00839B1D /* Frameworks */,
+				2AB1A72D1DB7EE0F00839B1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AB1A7311DB7EE0F00839B1D /* PBXTargetDependency */,
+			);
+			name = GeotifyTests;
+			productName = GeotifyTests;
+			productReference = 2AB1A72F1DB7EE0F00839B1D /* GeotifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2AB1A7391DB7EE0F00839B1D /* GeotifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AB1A7491DB7EE0F00839B1D /* Build configuration list for PBXNativeTarget "GeotifyUITests" */;
+			buildPhases = (
+				2AB1A7361DB7EE0F00839B1D /* Sources */,
+				2AB1A7371DB7EE0F00839B1D /* Frameworks */,
+				2AB1A7381DB7EE0F00839B1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AB1A73C1DB7EE0F00839B1D /* PBXTargetDependency */,
+			);
+			name = GeotifyUITests;
+			productName = GeotifyUITests;
+			productReference = 2AB1A73A1DB7EE0F00839B1D /* GeotifyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AB1A7131DB7EE0E00839B1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "William Breen";
+				TargetAttributes = {
+					2AB1A71A1DB7EE0E00839B1D = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					2AB1A72E1DB7EE0F00839B1D = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2AB1A71A1DB7EE0E00839B1D;
+					};
+					2AB1A7391DB7EE0F00839B1D = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2AB1A71A1DB7EE0E00839B1D;
+					};
+				};
+			};
+			buildConfigurationList = 2AB1A7161DB7EE0E00839B1D /* Build configuration list for PBXProject "Geotify" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2AB1A7121DB7EE0E00839B1D;
+			productRefGroup = 2AB1A71C1DB7EE0F00839B1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AB1A71A1DB7EE0E00839B1D /* Geotify */,
+				2AB1A72E1DB7EE0F00839B1D /* GeotifyTests */,
+				2AB1A7391DB7EE0F00839B1D /* GeotifyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AB1A7191DB7EE0E00839B1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AB1A7291DB7EE0F00839B1D /* LaunchScreen.storyboard in Resources */,
+				2AB1A7261DB7EE0F00839B1D /* Assets.xcassets in Resources */,
+				2AB1A7241DB7EE0F00839B1D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AB1A72D1DB7EE0F00839B1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AB1A7381DB7EE0F00839B1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AB1A7171DB7EE0E00839B1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AB1A7211DB7EE0F00839B1D /* ViewController.swift in Sources */,
+				2AB1A71F1DB7EE0F00839B1D /* AppDelegate.swift in Sources */,
+				2AB1A74D1DB7F65400839B1D /* AddGeotificationTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AB1A72B1DB7EE0F00839B1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AB1A7341DB7EE0F00839B1D /* GeotifyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AB1A7361DB7EE0F00839B1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AB1A73F1DB7EE0F00839B1D /* GeotifyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AB1A7311DB7EE0F00839B1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AB1A71A1DB7EE0E00839B1D /* Geotify */;
+			targetProxy = 2AB1A7301DB7EE0F00839B1D /* PBXContainerItemProxy */;
+		};
+		2AB1A73C1DB7EE0F00839B1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AB1A71A1DB7EE0E00839B1D /* Geotify */;
+			targetProxy = 2AB1A73B1DB7EE0F00839B1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2AB1A7221DB7EE0F00839B1D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AB1A7231DB7EE0F00839B1D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2AB1A7271DB7EE0F00839B1D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AB1A7281DB7EE0F00839B1D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2AB1A7411DB7EE0F00839B1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2AB1A7421DB7EE0F00839B1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AB1A7441DB7EE0F00839B1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Geotify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.elon.Geotify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2AB1A7451DB7EE0F00839B1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Geotify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.elon.Geotify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2AB1A7471DB7EE0F00839B1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GeotifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.elon.GeotifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Geotify.app/Geotify";
+			};
+			name = Debug;
+		};
+		2AB1A7481DB7EE0F00839B1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GeotifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.elon.GeotifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Geotify.app/Geotify";
+			};
+			name = Release;
+		};
+		2AB1A74A1DB7EE0F00839B1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GeotifyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.elon.GeotifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Geotify;
+			};
+			name = Debug;
+		};
+		2AB1A74B1DB7EE0F00839B1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GeotifyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.elon.GeotifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Geotify;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AB1A7161DB7EE0E00839B1D /* Build configuration list for PBXProject "Geotify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AB1A7411DB7EE0F00839B1D /* Debug */,
+				2AB1A7421DB7EE0F00839B1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AB1A7431DB7EE0F00839B1D /* Build configuration list for PBXNativeTarget "Geotify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AB1A7441DB7EE0F00839B1D /* Debug */,
+				2AB1A7451DB7EE0F00839B1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2AB1A7461DB7EE0F00839B1D /* Build configuration list for PBXNativeTarget "GeotifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AB1A7471DB7EE0F00839B1D /* Debug */,
+				2AB1A7481DB7EE0F00839B1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2AB1A7491DB7EE0F00839B1D /* Build configuration list for PBXNativeTarget "GeotifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AB1A74A1DB7EE0F00839B1D /* Debug */,
+				2AB1A74B1DB7EE0F00839B1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2AB1A7131DB7EE0E00839B1D /* Project object */;
+}
