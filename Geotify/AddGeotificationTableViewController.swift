@@ -16,6 +16,8 @@ class AddGeotificationTableViewController: UITableViewController {
     @IBOutlet weak var noteTextField: UITextField!
     @IBOutlet weak var entryOrExitSegmentControl: UISegmentedControl!
     
+    var viewController: ViewController? = nil
+    
     
     @IBAction func onCancel(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
@@ -29,6 +31,29 @@ class AddGeotificationTableViewController: UITableViewController {
     }
 
     @IBAction func addGeotification(_ sender: UIBarButtonItem) {
+        guard let radius = Double(radiusTextField.text!) else{
+            showAlert(withTitle: "Geotify", message: "radius is not an integer")
+            return
+        }
+        if radius < 0.0 || radius > 100000.0 {
+            showAlert(withTitle: "Geotify", message: "radius is an invalid integer")
+            return
+        }
+        
+        let note = noteTextField.text!
+        if note == "" {
+            showAlert(withTitle: "Geotify", message: "bad note field")
+            return
+        }
+        
+        let onEntry = (entryOrExitSegmentControl.selectedSegmentIndex == 0)
+        
+        let geotification = Geotification(coordinate: mapView.centerCoordinate, radius: radius, note: note, onEntry: onEntry)
+        
+        viewController?.addToMap(geotification: geotification)
+        
+        radiusTextField.text = ""
+        noteTextField.text = ""
     }
 
     // MARK: - Table view data source

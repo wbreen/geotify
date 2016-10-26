@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A79885F1DC124D3002DE81B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A79885E1DC124D3002DE81B /* Utilities.swift */; };
+		2A7988611DC12C87002DE81B /* Geotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7988601DC12C87002DE81B /* Geotification.swift */; };
 		2AB1A71F1DB7EE0F00839B1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1A71E1DB7EE0F00839B1D /* AppDelegate.swift */; };
 		2AB1A7211DB7EE0F00839B1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1A7201DB7EE0F00839B1D /* ViewController.swift */; };
 		2AB1A7241DB7EE0F00839B1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AB1A7221DB7EE0F00839B1D /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		2A79885E1DC124D3002DE81B /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		2A7988601DC12C87002DE81B /* Geotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geotification.swift; sourceTree = "<group>"; };
 		2AB1A71B1DB7EE0F00839B1D /* Geotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB1A71E1DB7EE0F00839B1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AB1A7201DB7EE0F00839B1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				2AB1A72A1DB7EE0F00839B1D /* Info.plist */,
 				2AB1A74C1DB7F65400839B1D /* AddGeotificationTableViewController.swift */,
 				2A79885E1DC124D3002DE81B /* Utilities.swift */,
+				2A7988601DC12C87002DE81B /* Geotification.swift */,
 			);
 			path = Geotify;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				2AB1A7211DB7EE0F00839B1D /* ViewController.swift in Sources */,
 				2AB1A71F1DB7EE0F00839B1D /* AppDelegate.swift in Sources */,
 				2A79885F1DC124D3002DE81B /* Utilities.swift in Sources */,
+				2A7988611DC12C87002DE81B /* Geotification.swift in Sources */,
 				2AB1A74D1DB7F65400839B1D /* AddGeotificationTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
