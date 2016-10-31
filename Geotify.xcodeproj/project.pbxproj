@@ -14,9 +14,9 @@
 		2AB1A7241DB7EE0F00839B1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AB1A7221DB7EE0F00839B1D /* Main.storyboard */; };
 		2AB1A7261DB7EE0F00839B1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB1A7251DB7EE0F00839B1D /* Assets.xcassets */; };
 		2AB1A7291DB7EE0F00839B1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AB1A7271DB7EE0F00839B1D /* LaunchScreen.storyboard */; };
-		2AB1A7341DB7EE0F00839B1D /* GeotifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1A7331DB7EE0F00839B1D /* GeotifyTests.swift */; };
-		2AB1A73F1DB7EE0F00839B1D /* GeotifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1A73E1DB7EE0F00839B1D /* GeotifyUITests.swift */; };
 		2AB1A74D1DB7F65400839B1D /* AddGeotificationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1A74C1DB7F65400839B1D /* AddGeotificationTableViewController.swift */; };
+		2AC501A91DC7C1D70060F1D5 /* GeotificationsDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC501A81DC7C1D70060F1D5 /* GeotificationsDB.swift */; };
+		2AC501C21DC7CBDB0060F1D5 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC501B51DC7CB960060F1D5 /* SQLite.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +34,55 @@
 			remoteGlobalIDString = 2AB1A71A1DB7EE0E00839B1D;
 			remoteInfo = Geotify;
 		};
+		2AC501B41DC7CB960060F1D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AC501AA1DC7CB960060F1D5 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		2AC501B61DC7CB960060F1D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AC501AA1DC7CB960060F1D5 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		2AC501B81DC7CB960060F1D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AC501AA1DC7CB960060F1D5 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		2AC501BA1DC7CB960060F1D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AC501AA1DC7CB960060F1D5 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		2AC501BC1DC7CB960060F1D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AC501AA1DC7CB960060F1D5 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		2AC501BE1DC7CB960060F1D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AC501AA1DC7CB960060F1D5 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		2AC501C01DC7CB960060F1D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AC501AA1DC7CB960060F1D5 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -47,12 +96,10 @@
 		2AB1A7281DB7EE0F00839B1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AB1A72A1DB7EE0F00839B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AB1A72F1DB7EE0F00839B1D /* GeotifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeotifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AB1A7331DB7EE0F00839B1D /* GeotifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeotifyTests.swift; sourceTree = "<group>"; };
-		2AB1A7351DB7EE0F00839B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AB1A73A1DB7EE0F00839B1D /* GeotifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeotifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AB1A73E1DB7EE0F00839B1D /* GeotifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeotifyUITests.swift; sourceTree = "<group>"; };
-		2AB1A7401DB7EE0F00839B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AB1A74C1DB7F65400839B1D /* AddGeotificationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGeotificationTableViewController.swift; sourceTree = "<group>"; };
+		2AC501A81DC7C1D70060F1D5 /* GeotificationsDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeotificationsDB.swift; sourceTree = "<group>"; };
+		2AC501AA1DC7CB960060F1D5 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AC501C21DC7CBDB0060F1D5 /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,9 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				2AB1A71D1DB7EE0F00839B1D /* Geotify */,
-				2AB1A7321DB7EE0F00839B1D /* GeotifyTests */,
-				2AB1A73D1DB7EE0F00839B1D /* GeotifyUITests */,
 				2AB1A71C1DB7EE0F00839B1D /* Products */,
+				2AC501AA1DC7CB960060F1D5 /* SQLite.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,26 +159,23 @@
 				2AB1A74C1DB7F65400839B1D /* AddGeotificationTableViewController.swift */,
 				2A79885E1DC124D3002DE81B /* Utilities.swift */,
 				2A7988601DC12C87002DE81B /* Geotification.swift */,
+				2AC501A81DC7C1D70060F1D5 /* GeotificationsDB.swift */,
 			);
 			path = Geotify;
 			sourceTree = "<group>";
 		};
-		2AB1A7321DB7EE0F00839B1D /* GeotifyTests */ = {
+		2AC501AB1DC7CB960060F1D5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2AB1A7331DB7EE0F00839B1D /* GeotifyTests.swift */,
-				2AB1A7351DB7EE0F00839B1D /* Info.plist */,
+				2AC501B51DC7CB960060F1D5 /* SQLite.framework */,
+				2AC501B71DC7CB960060F1D5 /* SQLiteTests iOS.xctest */,
+				2AC501B91DC7CB960060F1D5 /* SQLite.framework */,
+				2AC501BB1DC7CB960060F1D5 /* SQLiteTests Mac.xctest */,
+				2AC501BD1DC7CB960060F1D5 /* SQLite.framework */,
+				2AC501BF1DC7CB960060F1D5 /* SQLiteTests tvOS.xctest */,
+				2AC501C11DC7CB960060F1D5 /* SQLite.framework */,
 			);
-			path = GeotifyTests;
-			sourceTree = "<group>";
-		};
-		2AB1A73D1DB7EE0F00839B1D /* GeotifyUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2AB1A73E1DB7EE0F00839B1D /* GeotifyUITests.swift */,
-				2AB1A7401DB7EE0F00839B1D /* Info.plist */,
-			);
-			path = GeotifyUITests;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +271,12 @@
 			mainGroup = 2AB1A7121DB7EE0E00839B1D;
 			productRefGroup = 2AB1A71C1DB7EE0F00839B1D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2AC501AB1DC7CB960060F1D5 /* Products */;
+					ProjectRef = 2AC501AA1DC7CB960060F1D5 /* SQLite.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2AB1A71A1DB7EE0E00839B1D /* Geotify */,
@@ -235,6 +285,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2AC501B51DC7CB960060F1D5 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 2AC501B41DC7CB960060F1D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AC501B71DC7CB960060F1D5 /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = 2AC501B61DC7CB960060F1D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AC501B91DC7CB960060F1D5 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 2AC501B81DC7CB960060F1D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AC501BB1DC7CB960060F1D5 /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = 2AC501BA1DC7CB960060F1D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AC501BD1DC7CB960060F1D5 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 2AC501BC1DC7CB960060F1D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AC501BF1DC7CB960060F1D5 /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = 2AC501BE1DC7CB960060F1D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AC501C11DC7CB960060F1D5 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 2AC501C01DC7CB960060F1D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2AB1A7191DB7EE0E00839B1D /* Resources */ = {
@@ -271,6 +373,7 @@
 				2AB1A7211DB7EE0F00839B1D /* ViewController.swift in Sources */,
 				2AB1A71F1DB7EE0F00839B1D /* AppDelegate.swift in Sources */,
 				2A79885F1DC124D3002DE81B /* Utilities.swift in Sources */,
+				2AC501A91DC7C1D70060F1D5 /* GeotificationsDB.swift in Sources */,
 				2A7988611DC12C87002DE81B /* Geotification.swift in Sources */,
 				2AB1A74D1DB7F65400839B1D /* AddGeotificationTableViewController.swift in Sources */,
 			);
@@ -280,7 +383,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AB1A7341DB7EE0F00839B1D /* GeotifyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +390,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AB1A73F1DB7EE0F00839B1D /* GeotifyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

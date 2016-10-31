@@ -48,10 +48,18 @@ class AddGeotificationTableViewController: UITableViewController {
         
         let onEntry = (entryOrExitSegmentControl.selectedSegmentIndex == 0)
         
-        let geotification = Geotification(coordinate: mapView.centerCoordinate, radius: radius, note: note, onEntry: onEntry)
+        let geotification = Geotification(id: 1, coordinate: mapView.centerCoordinate, radius: radius, note: note, onEntry: onEntry)
         
+        //tell the main map about the new geotification
         viewController?.addToMap(geotification: geotification)
+        viewController?.locationManager.startMonitoring(for: geotification.region())
         
+        //add it to the database
+        if let id = GeotificationsDB.instance.add(geotification: geotification) {
+            geotification.id = id   //remember the id given to us
+        }
+        
+        //clear the text fields
         radiusTextField.text = ""
         noteTextField.text = ""
     }

@@ -10,6 +10,7 @@ import CoreLocation
 import MapKit
 
 class Geotification: NSObject, MKAnnotation{
+    var id: Int64?
     var coordinate: CLLocationCoordinate2D
     var radius: CLLocationDistance
     var note: String
@@ -17,12 +18,13 @@ class Geotification: NSObject, MKAnnotation{
     
     var title: String? {
         if note.isEmpty {
-            return "noNote"
+            return "No Note"
         }
         return note
     }
     
-    init(coordinate: CLLocationCoordinate2D, radius: CLLocationDistance, note: String, onEntry: Bool){
+    init(id: Int64, coordinate: CLLocationCoordinate2D, radius: CLLocationDistance, note: String, onEntry: Bool){
+        self.id = id
         self.coordinate = coordinate
         self.radius = radius
         self.note = note

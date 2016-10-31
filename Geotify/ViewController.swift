@@ -20,6 +20,11 @@ class ViewController: UIViewController {
         locationManager.requestAlwaysAuthorization()
         
         self.mapView.delegate = self
+        
+        let geotifications = GeotificationsDB.instance.getGeotifications()
+        for geotification in geotifications {
+            addToMap(geotification: geotification)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,10 +45,9 @@ class ViewController: UIViewController {
     func addToMap(geotification: Geotification){
         //drop the pin
         mapView.addAnnotation(geotification)
+        
         //add radius circle
         mapView.add(MKCircle(center: geotification.coordinate, radius: geotification.radius))
-        //monitor the GeoFence
-        locationManager.startMonitoring(for: geotification.region())
     }
 
 }
@@ -68,6 +72,7 @@ extension ViewController: MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        
         //remove the pin
         let geotification = view.annotation as! Geotification
         mapView.removeAnnotation(view.annotation!)
@@ -81,6 +86,8 @@ extension ViewController: MKMapViewDelegate {
                 break
         }
     }
+        
+    GeotificationsDB.instance.deleteGeotification(aId: geotification.id!)
         
     // stop monitoting this geofence
     for region in locationManager.monitoredRegions {
