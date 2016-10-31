@@ -73,6 +73,22 @@ extension ViewController: MKMapViewDelegate {
         mapView.removeAnnotation(view.annotation!)
         
         //remove the matching overlay
+        let overlays = mapView.overlays
+        for overlay in overlays {
+            guard let circleOverlay = overlay as? MKCircle else {continue}
+            let coord = circleOverlay.coordinate
+            if coord.latitude == geotification.coordinate.latitude && coord.longitude == geotification.coordinate.longitude && circleOverlay.radius == geotification.radius { mapView.remove(circleOverlay)
+                break
+        }
+    }
         
+    // stop monitoting this geofence
+    for region in locationManager.monitoredRegions {
+        guard let circularRegion = region as? CLCircularRegion, circularRegion.identifier == String(describing: geotification.note) else {continue}
+        locationManager.stopMonitoring(for: circularRegion)
     }
 }
+
+}
+
+
